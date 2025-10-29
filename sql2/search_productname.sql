@@ -1,0 +1,4 @@
+SELECT ORDERS.product_name
+FROM ORDERS
+JOIN CUSTOMERS on ORDERS.customer_id = CUSTOMERS.id
+WHERE LOWER(CUSTOMERS.name) = LOWER('alexey');
